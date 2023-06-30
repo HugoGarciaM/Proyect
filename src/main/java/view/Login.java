@@ -21,7 +21,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         LoadImage logo=new LoadImage ("/img/llave.png",lblOpacar.getHeight(),lblOpacar.getWidth());
         lblOpacar.setIcon(logo.getImg());
-        LoadImage logo1=new LoadImage ("/img/logoemp.jpg",lblLogin.getHeight(),lblLogin.getWidth());
+        LoadImage logo1=new LoadImage ("/img/Logo.png",lblLogin.getHeight(),lblLogin.getWidth());
         lblLogin.setIcon(logo1.getImg());
         LoadImage logo2 =new LoadImage ("/img/Fondo.jpg",lblFondo.getHeight(),lblFondo.getWidth());
         lblFondo.setIcon(logo2.getImg());
@@ -84,7 +84,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, -1, -1));
-        jPanel1.add(lblLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 30, 130, 120));
+        jPanel1.add(lblLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 210, 170));
 
         btnIngresar.setFont(new java.awt.Font("Monospac821 BT", 0, 24)); // NOI18N
         btnIngresar.setText("Ingresar");

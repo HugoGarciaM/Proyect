@@ -18,7 +18,7 @@ public class generarReporte extends javax.swing.JFrame {
      */
     public generarReporte() {
         initComponents();
-        LoadImage logo=new LoadImage ("/img/logoemp.jpg",lblReporte.getHeight(),lblReporte.getWidth());
+        LoadImage logo=new LoadImage ("/img/logo.png",lblReporte.getHeight(),lblReporte.getWidth());
         lblReporte.setIcon(logo.getImg());
         
 
@@ -117,19 +117,6 @@ public class generarReporte extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(42, 42, 42)
-                                .addComponent(lbl_ganancias)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel19)))
-                        .addGap(18, 18, 18)
-                        .addComponent(lblReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(24, 24, 24)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
@@ -166,6 +153,21 @@ public class generarReporte extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(lbl_produc_vendi)))
                 .addContainerGap(30, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(42, 42, 42)
+                        .addComponent(lbl_ganancias)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel19)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -261,13 +263,13 @@ public class generarReporte extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    public javax.swing.JLabel lb_cantidad;
-    public javax.swing.JLabel lb_ingresos;
-    public javax.swing.JLabel lb_stok;
-    public javax.swing.JLabel lb_sueldos;
-    public javax.swing.JLabel lblReporte;
-    public javax.swing.JLabel lbl_ganancias;
-    public javax.swing.JLabel lbl_precio_total;
-    public javax.swing.JLabel lbl_produc_vendi;
+    private javax.swing.JLabel lb_cantidad;
+    private javax.swing.JLabel lb_ingresos;
+    private javax.swing.JLabel lb_stok;
+    private javax.swing.JLabel lb_sueldos;
+    private javax.swing.JLabel lblReporte;
+    private javax.swing.JLabel lbl_ganancias;
+    private javax.swing.JLabel lbl_precio_total;
+    private javax.swing.JLabel lbl_produc_vendi;
     // End of variables declaration//GEN-END:variables
 }
