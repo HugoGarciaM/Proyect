@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import model.db;
 import view.Login;
+import view.menuAdministracion;
 /**
  *
  * @author metallica
@@ -39,7 +40,10 @@ public class loginController extends db{
                     query.setString(1,vlog.txtUsuario.getText());
                     query.setString(2,String.valueOf(vlog.txtContraseña.getPassword()));
                     ResultSet result=query.executeQuery();
-                    if(result.next()) JOptionPane.showMessageDialog(null, "se inicio sesion");
+                    if(result.next()) {
+                        menuAdministracion l = new menuAdministracion();
+                        new menuAdminController(l);
+                    }
                     else JOptionPane.showMessageDialog(null, "usurio y contraseña no coinciden");
                 }catch(SQLException e){
                     System.out.println("error login: "+e);
