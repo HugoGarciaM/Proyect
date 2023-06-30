@@ -11,6 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import model.db;
 import view.Login;
 /**
@@ -32,13 +33,14 @@ public class loginController extends db{
             @Override
             public void actionPerformed(ActionEvent ae) {
                 try{
+                    System.out.println(String.valueOf(vlog.txtContraseña.getPassword()));
                     String sql="select * from personal where usuario=(?) and contraseña=(?)";
                     PreparedStatement query=con.prepareStatement(sql);
                     query.setString(1,vlog.txtUsuario.getText());
                     query.setString(2,String.valueOf(vlog.txtContraseña.getPassword()));
                     ResultSet result=query.executeQuery();
-                    if(result.getRow()>0) System.out.println("se inicio sesion");
-                    else System.out.println("usuario y contraseña no coincide");
+                    if(result.next()) JOptionPane.showMessageDialog(null, "se inicio sesion");
+                    else JOptionPane.showMessageDialog(null, "usurio y contraseña no coinciden");
                 }catch(SQLException e){
                     System.out.println("error login: "+e);
                 }
