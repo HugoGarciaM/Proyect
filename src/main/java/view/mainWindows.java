@@ -19,6 +19,10 @@ public class mainWindows extends javax.swing.JFrame {
         initComponents();
         LoadImage Fondo=new LoadImage ("/img/Fondo.jpg",lbl_fondo.getHeight(),lbl_fondo.getWidth());
         lbl_fondo.setIcon(Fondo.getImg());
+        lbl_img1.setIcon(new LoadImage("/img/producto1.jpg", lbl_img1.getHeight(), lbl_img1.getWidth()).getImg());
+        lbl_img2.setIcon(new LoadImage("/img/producto1.jpg", lbl_img2.getHeight(), lbl_img2.getWidth()).getImg());
+        lbl_img3.setIcon(new LoadImage("/img/producto1.jpg", lbl_img3.getHeight(), lbl_img3.getWidth()).getImg());
+        lbl_img4.setIcon(new LoadImage("/img/producto1.jpg", lbl_img4.getHeight(), lbl_img4.getWidth()).getImg());
     }
 
     /**
