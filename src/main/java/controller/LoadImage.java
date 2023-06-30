@@ -15,6 +15,7 @@ public class LoadImage {
     private Image img=null;
     private ImageIcon icon=null;
     
+    
     public LoadImage(String url,int height,int width){
         img=new ImageIcon(getClass().getResource(url)).getImage();
         icon=new ImageIcon(img.getScaledInstance(width, height, Image.SCALE_SMOOTH));

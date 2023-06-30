@@ -4,6 +4,9 @@
  */
 package view;
 
+import controller.LoadImage;
+import controller.loginController;
+
 /**
  *
  * @author DELL
@@ -15,6 +18,10 @@ public class generarReporte extends javax.swing.JFrame {
      */
     public generarReporte() {
         initComponents();
+        LoadImage logo=new LoadImage ("/img/logoemp.jpg",lblReporte.getHeight(),lblReporte.getWidth());
+        lblReporte.setIcon(logo.getImg());
+        
+
     }
 
     /**
@@ -46,6 +53,7 @@ public class generarReporte extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+        lblReporte = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,17 +117,21 @@ public class generarReporte extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(33, 33, 33)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(42, 42, 42)
                                 .addComponent(lbl_ganancias)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel19))
+                                .addComponent(jLabel19)))
+                        .addGap(18, 18, 18)
+                        .addComponent(lblReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
                             .addComponent(jLabel7)
                             .addGroup(layout.createSequentialGroup()
@@ -128,10 +140,6 @@ public class generarReporte extends javax.swing.JFrame {
                                 .addComponent(lb_ingresos)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel20))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(26, 26, 26)
-                                .addComponent(lbl_produc_vendi))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(60, 60, 60)
                                 .addComponent(jLabel4)
@@ -152,19 +160,26 @@ public class generarReporte extends javax.swing.JFrame {
                         .addGap(99, 99, 99)
                         .addComponent(lb_sueldos)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel18)))
+                        .addComponent(jLabel18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(26, 26, 26)
+                        .addComponent(lbl_produc_vendi)))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(jLabel1)
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(lbl_ganancias)
-                    .addComponent(jLabel19))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(lbl_ganancias)
+                            .addComponent(jLabel19)))
+                    .addComponent(lblReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -191,7 +206,7 @@ public class generarReporte extends javax.swing.JFrame {
                     .addComponent(jLabel8)
                     .addComponent(lb_ingresos)
                     .addComponent(jLabel20))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
@@ -250,6 +265,7 @@ public class generarReporte extends javax.swing.JFrame {
     public javax.swing.JLabel lb_ingresos;
     public javax.swing.JLabel lb_stok;
     public javax.swing.JLabel lb_sueldos;
+    public javax.swing.JLabel lblReporte;
     public javax.swing.JLabel lbl_ganancias;
     public javax.swing.JLabel lbl_precio_total;
     public javax.swing.JLabel lbl_produc_vendi;
