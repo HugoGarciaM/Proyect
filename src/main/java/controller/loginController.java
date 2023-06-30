@@ -34,7 +34,7 @@ public class loginController extends db{
             public void actionPerformed(ActionEvent ae) {
                 try{
                     System.out.println(String.valueOf(vlog.txtContraseña.getPassword()));
-                    String sql="select * from personal where usuario=(?) and contraseña=(?)";
+                    String sql="select * from personal where usuario=(?) and contraseña=(?) and rol=1";
                     PreparedStatement query=con.prepareStatement(sql);
                     query.setString(1,vlog.txtUsuario.getText());
                     query.setString(2,String.valueOf(vlog.txtContraseña.getPassword()));

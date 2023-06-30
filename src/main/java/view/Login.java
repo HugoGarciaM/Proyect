@@ -19,14 +19,14 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        LoadImage logo=new LoadImage ("/img/llave.png",lblOpacar.getHeight(),lblOpacar.getWidth());
+        LoadImage logo=new LoadImage ("/img/Llave.png",lblOpacar.getHeight(),lblOpacar.getWidth());
         lblOpacar.setIcon(logo.getImg());
         LoadImage logo1=new LoadImage ("/img/Logo.png",lblLogin.getHeight(),lblLogin.getWidth());
         lblLogin.setIcon(logo1.getImg());
         LoadImage logo2 =new LoadImage ("/img/Fondo.jpg",lblFondo.getHeight(),lblFondo.getWidth());
         lblFondo.setIcon(logo2.getImg());
         lblOpacar.setBackground(new java.awt.Color(0,0,0,1));
-        new loginController(this);
+        //new loginController(this);
         
     }
 
