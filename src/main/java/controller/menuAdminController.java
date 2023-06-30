@@ -21,7 +21,9 @@ public class menuAdminController extends db{
     public menuAdministracion vm;
     public menuAdminController(menuAdministracion l){
         vm=l;
+        initaction();
     }
+    
     public void initaction(){
         vm.btn_generar_report.addActionListener(new ActionListener() {
             @Override
