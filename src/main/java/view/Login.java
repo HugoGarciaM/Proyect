@@ -17,8 +17,8 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        //LoadImage logo=new LoadImage ("/img/LOGO.jpg",jLabel4.getHeight(),jLabel4.getWidth());
-        //jLabel4.setIcon(logo.getImg());
+        LoadImage logo=new LoadImage ("/img/LOGO.jpg",jLabel4.getHeight(),jLabel4.getWidth());
+        jLabel4.setIcon(logo.getImg());
         new loginController(this);
         
     }
