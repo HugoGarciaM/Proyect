@@ -8,19 +8,26 @@ package model;
  *
  * @author metallica
  */
-public class producto {
+public class productoModel {
     public int id;
     public String nombre;
     public int tipo;
     public float precio;
     public int cantidad;
-    
+    public String descripcion;
     
     public void setProducto(String nombre,int tipo,float precio,int cantidad){
         this.nombre=nombre;
         this.tipo=tipo;
         this.precio=precio;
         this.cantidad=cantidad;
+    }
+    public void setDescripcion(String des){
+        descripcion=des;
+    }
+    
+    public String getDescripcion(){
+        return descripcion;
     }
     
     public int getId(){

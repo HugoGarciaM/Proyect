@@ -31,7 +31,7 @@ public class producto extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lblProducto = new javax.swing.JLabel();
         txt_precio_produc = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -50,9 +50,9 @@ public class producto extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Sitka Display", 2, 18)); // NOI18N
-        jLabel1.setText("NOMBRE DEL PRODUCTO");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
+        lblProducto.setFont(new java.awt.Font("Sitka Display", 2, 18)); // NOI18N
+        lblProducto.setText("NOMBRE DEL PRODUCTO");
+        jPanel1.add(lblProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
         txt_precio_produc.setText("99999");
         jPanel1.add(txt_precio_produc, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, -1, -1));
@@ -173,7 +173,6 @@ public class producto extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btn_reservar;
     private javax.swing.JLabel fondo;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -181,6 +180,7 @@ public class producto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JLabel lblImgProduct;
+    public javax.swing.JLabel lblProducto;
     public javax.swing.JTextField txt_cantidad;
     public javax.swing.JTextField txt_direccion;
     public javax.swing.JTextField txt_nombre;
