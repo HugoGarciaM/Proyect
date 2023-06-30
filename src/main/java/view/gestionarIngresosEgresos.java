@@ -46,6 +46,7 @@ public class gestionarIngresosEgresos extends javax.swing.JFrame {
         txt_precio = new javax.swing.JTextField();
         txt_id_compra = new javax.swing.JTextField();
         txt_cantida = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -125,6 +126,14 @@ public class gestionarIngresosEgresos extends javax.swing.JFrame {
 
         txt_cantida.setName(""); // NOI18N
         jPanel2.add(txt_cantida, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, -1, -1));
+
+        jButton1.setText("X");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, -1, -1));
         jPanel2.add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 400));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -150,6 +159,12 @@ public class gestionarIngresosEgresos extends javax.swing.JFrame {
     private void cbx_producActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_producActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cbx_producActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+     //   new menuAdministracion().setVisible(true);
+      //  dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,6 +208,7 @@ public class gestionarIngresosEgresos extends javax.swing.JFrame {
     public javax.swing.JComboBox<String> cbx_produc;
     public javax.swing.JComboBox<String> cbx_tipo;
     private javax.swing.JLabel fondo;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

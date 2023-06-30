@@ -29,6 +29,7 @@ public class loginController extends db{
         initAction();
     }
     
+    
     public void initAction(){
         vlog.btnIngresar.addActionListener(new ActionListener() {
             @Override

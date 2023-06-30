@@ -37,6 +37,7 @@ public class menuAdministracion extends javax.swing.JFrame {
         btn_ges_ingres_egresos = new javax.swing.JButton();
         btn_generar_report = new javax.swing.JButton();
         btn_ges_trabajadores = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         lblfondo = new javax.swing.JLabel();
         lblF = new javax.swing.JLabel();
 
@@ -64,6 +65,14 @@ public class menuAdministracion extends javax.swing.JFrame {
         btn_ges_trabajadores.setText("GESTIONAR TRABAJADORES");
         btn_ges_trabajadores.setName(""); // NOI18N
         jPanel1.add(btn_ges_trabajadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, -1, -1));
+
+        jButton1.setText("SALIR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, -1, -1));
         jPanel1.add(lblfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 330));
         jPanel1.add(lblF, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 150, 120));
 
@@ -84,6 +93,12 @@ public class menuAdministracion extends javax.swing.JFrame {
     private void btn_gest_pedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gest_pedidosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_gest_pedidosActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+      //  new mainWindows().setVisible(true);
+      //  dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -125,6 +140,7 @@ public class menuAdministracion extends javax.swing.JFrame {
     public javax.swing.JButton btn_ges_ingres_egresos;
     public javax.swing.JButton btn_ges_trabajadores;
     public javax.swing.JButton btn_gest_pedidos;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblF;
     private javax.swing.JLabel lblfondo;

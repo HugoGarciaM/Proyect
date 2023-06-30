@@ -44,6 +44,7 @@ public class producto extends javax.swing.JFrame {
         btn_reservar = new javax.swing.JButton();
         txt_telefono = new javax.swing.JTextField();
         lblImgProduct = new javax.swing.JLabel();
+        btn_salir = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -103,6 +104,14 @@ public class producto extends javax.swing.JFrame {
         jPanel1.add(txt_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, -1, -1));
         jPanel1.add(lblImgProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 110, 80));
 
+        btn_salir.setText("SALIR");
+        btn_salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_salirActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, -1, -1));
+
         fondo.setFont(new java.awt.Font("Sitka Display", 2, 18)); // NOI18N
         jPanel1.add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, 450, 380));
 
@@ -134,6 +143,12 @@ public class producto extends javax.swing.JFrame {
     private void txt_telefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_telefonoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_telefonoActionPerformed
+
+    private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
+        // TODO add your handling code here:
+      //  new mainWindows().setVisible(true);
+        //dispose();
+    }//GEN-LAST:event_btn_salirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,6 +187,7 @@ public class producto extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btn_reservar;
+    public javax.swing.JButton btn_salir;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

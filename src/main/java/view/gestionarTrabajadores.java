@@ -51,6 +51,7 @@ public class gestionarTrabajadores extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         t_trabajadores = new javax.swing.JTable();
         btn_eliminar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         lblfondo = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
@@ -168,7 +169,7 @@ public class gestionarTrabajadores extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txt_ci, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(txt_salario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -181,9 +182,7 @@ public class gestionarTrabajadores extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(btn_guardar))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(btn_cancelar)))
+                    .addComponent(btn_cancelar))
                 .addContainerGap())
         );
 
@@ -213,6 +212,14 @@ public class gestionarTrabajadores extends javax.swing.JFrame {
         btn_eliminar.setText("ELIMINAR");
         btn_eliminar.setName(""); // NOI18N
         jPanel2.add(btn_eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, -1, -1));
+
+        jButton1.setText("X");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, -1, -1));
         jPanel2.add(lblfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, -1, -1));
         jPanel2.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, 720, 430));
 
@@ -240,6 +247,12 @@ public class gestionarTrabajadores extends javax.swing.JFrame {
     private void txt_carnetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_carnetActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_carnetActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+      //  new menuAdministracion().setVisible(true);
+      //  dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -281,6 +294,7 @@ public class gestionarTrabajadores extends javax.swing.JFrame {
     public javax.swing.JButton btn_cancelar;
     public javax.swing.JButton btn_eliminar;
     public javax.swing.JButton btn_guardar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

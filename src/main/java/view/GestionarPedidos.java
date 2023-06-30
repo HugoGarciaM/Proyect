@@ -64,6 +64,7 @@ public class GestionarPedidos extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         txtPrecio = new javax.swing.JTextField();
         sbtnCantidad = new java.awt.Scrollbar();
+        jButton1 = new javax.swing.JButton();
         lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -213,6 +214,14 @@ public class GestionarPedidos extends javax.swing.JFrame {
         jPanel1.add(txtPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 71, -1));
         jPanel1.add(sbtnCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, -1, -1));
 
+        jButton1.setText("X");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 20, 20));
+
         lblFondo.setForeground(new java.awt.Color(255, 0, 0));
         jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 450));
 
@@ -258,6 +267,12 @@ public class GestionarPedidos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtProductoBusActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+     //   new menuAdministracion().setVisible(true);
+     //  dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -299,6 +314,7 @@ public class GestionarPedidos extends javax.swing.JFrame {
     public javax.swing.JButton btnModificar;
     public javax.swing.JComboBox<String> cbtnProducto;
     public javax.swing.JFormattedTextField ftxtFechaBus;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

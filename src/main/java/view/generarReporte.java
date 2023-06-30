@@ -6,6 +6,7 @@ package view;
 
 import controller.LoadImage;
 import controller.loginController;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -54,6 +55,7 @@ public class generarReporte extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         lblReporte = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -110,6 +112,14 @@ public class generarReporte extends javax.swing.JFrame {
         jLabel20.setText("Bs");
         jLabel20.setName(""); // NOI18N
 
+        jButton1.setText("IMPRIMIR REPORTE");
+        jButton1.setActionCommand("");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -123,25 +133,28 @@ public class generarReporte extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6)
                                     .addComponent(jLabel7)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel8)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lb_ingresos)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel20))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(60, 60, 60)
-                                        .addComponent(jLabel4)
-                                        .addGap(20, 20, 20)
-                                        .addComponent(lb_cantidad)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel16)
-                                        .addGap(24, 24, 24)
-                                        .addComponent(jLabel5)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lbl_precio_total)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel17))))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                            .addComponent(jLabel8)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(lb_ingresos)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jLabel20)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jButton1))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                            .addGap(60, 60, 60)
+                                            .addComponent(jLabel4)
+                                            .addGap(20, 20, 20)
+                                            .addComponent(lb_cantidad)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jLabel16)
+                                            .addGap(24, 24, 24)
+                                            .addComponent(jLabel5)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(lbl_precio_total)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jLabel17)))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(99, 99, 99)
                                 .addComponent(lb_stok))
@@ -205,16 +218,29 @@ public class generarReporte extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(lb_sueldos)
                     .addComponent(jLabel18))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(lb_ingresos)
-                    .addComponent(jLabel20))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8)
+                            .addComponent(lb_ingresos)
+                            .addComponent(jLabel20))
+                        .addContainerGap(32, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(15, 15, 15))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+       /* JOptionPane.showMessageDialog(this,"SE IMPRIMIO CORRECTAMENTE");
+        new menuAdministracion().setVisible(true);
+        dispose();*/
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -252,6 +278,7 @@ public class generarReporte extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -265,13 +292,13 @@ public class generarReporte extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel lb_cantidad;
-    private javax.swing.JLabel lb_ingresos;
-    private javax.swing.JLabel lb_stok;
-    private javax.swing.JLabel lb_sueldos;
-    private javax.swing.JLabel lblReporte;
-    private javax.swing.JLabel lbl_ganancias;
-    private javax.swing.JLabel lbl_precio_total;
-    private javax.swing.JLabel lbl_produc_vendi;
+    public javax.swing.JLabel lb_cantidad;
+    public javax.swing.JLabel lb_ingresos;
+    public javax.swing.JLabel lb_stok;
+    public javax.swing.JLabel lb_sueldos;
+    public javax.swing.JLabel lblReporte;
+    public javax.swing.JLabel lbl_ganancias;
+    public javax.swing.JLabel lbl_precio_total;
+    public javax.swing.JLabel lbl_produc_vendi;
     // End of variables declaration//GEN-END:variables
 }
