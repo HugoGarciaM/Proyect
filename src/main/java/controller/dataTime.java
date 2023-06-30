@@ -4,15 +4,16 @@
  */
 package controller;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
+
 
 /**
  *
  * @author HUGO GARCIA
  */
 public class dataTime {
-    Date fecha=new Date();
-    SimpleDateFormat formatoFecha=new SimpleDateFormat("dd/MM/YYYY");
-    return formatoFecha.format(fecha);
+    public String fechaActual(){
+    Calendar Time =Calendar.getInstance();
+    return Time.get(Calendar.DATE)+"-"+(Time.get(Calendar.MONTH)+1)+"-"+Time.get(Calendar.YEAR);
+}
 }
