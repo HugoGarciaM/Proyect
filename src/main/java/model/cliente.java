@@ -8,6 +8,6 @@ package model;
  *
  * @author metallica
  */
-public class userModel {
+public class cliente {
     
 }
