@@ -42,7 +42,9 @@ public class loginController extends db{
                     ResultSet result=query.executeQuery();
                     if(result.next()) {
                         menuAdministracion l = new menuAdministracion();
+                        l.setVisible(true);
                         new menuAdminController(l);
+                        vlog.dispose();
                     }
                     else JOptionPane.showMessageDialog(null, "usurio y contraseña no coinciden");
                 }catch(SQLException e){
