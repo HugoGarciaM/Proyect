@@ -3,9 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
+import com.formdev.flatlaf.intellijthemes.FlatArcOrangeIJTheme;
 import controller.LoadImage;
 import javax.swing.Icon;
 import controller.loginController;
+import javax.swing.JOptionPane;
 /**
  *
  * @author HUGO GARCIA
@@ -157,7 +159,11 @@ public class Login extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+try{
+            FlatArcOrangeIJTheme.setup();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
