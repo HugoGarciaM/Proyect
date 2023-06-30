@@ -34,13 +34,13 @@ public class generarReporte extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        lbl_ganancias = new javax.swing.JLabel();
+        lbl_produc_vendi = new javax.swing.JLabel();
+        lb_stok = new javax.swing.JLabel();
+        lbl_precio_total = new javax.swing.JLabel();
+        lb_cantidad = new javax.swing.JLabel();
+        lb_ingresos = new javax.swing.JLabel();
+        lb_sueldos = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -66,26 +66,26 @@ public class generarReporte extends javax.swing.JFrame {
 
         jLabel8.setText("INGRESOS MES:");
 
-        jLabel9.setText("XXXXXX");
-        jLabel9.setName("lbl_ganancias"); // NOI18N
+        lbl_ganancias.setText("XXXXXX");
+        lbl_ganancias.setName(""); // NOI18N
 
-        jLabel10.setText("XXXXXX");
-        jLabel10.setName("lbl_produc_vendi"); // NOI18N
+        lbl_produc_vendi.setText("XXXXXX");
+        lbl_produc_vendi.setName(""); // NOI18N
 
-        jLabel11.setText("XXXXXX");
-        jLabel11.setName("lb_stok"); // NOI18N
+        lb_stok.setText("XXXXXX");
+        lb_stok.setName(""); // NOI18N
 
-        jLabel12.setText("XXXXXX");
-        jLabel12.setName("lbl_precio_total"); // NOI18N
+        lbl_precio_total.setText("XXXXXX");
+        lbl_precio_total.setName(""); // NOI18N
 
-        jLabel13.setText("XXXXXX");
-        jLabel13.setName("lb_cantidad"); // NOI18N
+        lb_cantidad.setText("XXXXXX");
+        lb_cantidad.setName(""); // NOI18N
 
-        jLabel14.setText("XXXXXX");
-        jLabel14.setName("lb_ingresos"); // NOI18N
+        lb_ingresos.setText("XXXXXX");
+        lb_ingresos.setName(""); // NOI18N
 
-        jLabel15.setText("XXXXXX");
-        jLabel15.setName("lb_sueldos"); // NOI18N
+        lb_sueldos.setText("XXXXXX");
+        lb_sueldos.setName(""); // NOI18N
 
         jLabel16.setText("Bs");
         jLabel16.setName(""); // NOI18N
@@ -117,7 +117,7 @@ public class generarReporte extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(42, 42, 42)
-                                .addComponent(jLabel9)
+                                .addComponent(lbl_ganancias)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel19))
                             .addComponent(jLabel6)
@@ -125,32 +125,32 @@ public class generarReporte extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel8)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel14)
+                                .addComponent(lb_ingresos)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel20))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addGap(26, 26, 26)
-                                .addComponent(jLabel10))
+                                .addComponent(lbl_produc_vendi))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(60, 60, 60)
                                 .addComponent(jLabel4)
                                 .addGap(20, 20, 20)
-                                .addComponent(jLabel13)
+                                .addComponent(lb_cantidad)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel16)
                                 .addGap(24, 24, 24)
                                 .addComponent(jLabel5)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel12)
+                                .addComponent(lbl_precio_total)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel17))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(99, 99, 99)
-                        .addComponent(jLabel11))
+                        .addComponent(lb_stok))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(99, 99, 99)
-                        .addComponent(jLabel15)
+                        .addComponent(lb_sueldos)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel18)))
                 .addContainerGap(30, Short.MAX_VALUE))
@@ -163,33 +163,33 @@ public class generarReporte extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel9)
+                    .addComponent(lbl_ganancias)
                     .addComponent(jLabel19))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel10))
+                    .addComponent(lbl_produc_vendi))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13)
+                    .addComponent(lbl_precio_total)
+                    .addComponent(lb_cantidad)
                     .addComponent(jLabel17)
                     .addComponent(jLabel16))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jLabel11))
+                    .addComponent(lb_stok))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jLabel15)
+                    .addComponent(lb_sueldos)
                     .addComponent(jLabel18))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel14)
+                    .addComponent(lb_ingresos)
                     .addComponent(jLabel20))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
@@ -234,12 +234,6 @@ public class generarReporte extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -252,6 +246,12 @@ public class generarReporte extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    public javax.swing.JLabel lb_cantidad;
+    public javax.swing.JLabel lb_ingresos;
+    public javax.swing.JLabel lb_stok;
+    public javax.swing.JLabel lb_sueldos;
+    public javax.swing.JLabel lbl_ganancias;
+    public javax.swing.JLabel lbl_precio_total;
+    public javax.swing.JLabel lbl_produc_vendi;
     // End of variables declaration//GEN-END:variables
 }

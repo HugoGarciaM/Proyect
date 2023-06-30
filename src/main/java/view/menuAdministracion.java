@@ -26,24 +26,24 @@ public class menuAdministracion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btn_gest_pedidos = new javax.swing.JButton();
+        btn_ges_trabajadores = new javax.swing.JButton();
+        btn_ges_ingres_egresos = new javax.swing.JButton();
+        btn_generar_report = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("GESTIONAR PEDIDOS");
-        jButton1.setName("btn_ges_pedidos"); // NOI18N
+        btn_gest_pedidos.setText("GESTIONAR PEDIDOS");
+        btn_gest_pedidos.setName(""); // NOI18N
 
-        jButton2.setText("GESTIONAR TRABAJADORES");
-        jButton2.setName("btn_ges_trabajadores"); // NOI18N
+        btn_ges_trabajadores.setText("GESTIONAR TRABAJADORES");
+        btn_ges_trabajadores.setName(""); // NOI18N
 
-        jButton3.setText("GESTIONAR INGRESOS EGRESOS");
-        jButton3.setName("btn_ges_ingres_egresos"); // NOI18N
+        btn_ges_ingres_egresos.setText("GESTIONAR INGRESOS EGRESOS");
+        btn_ges_ingres_egresos.setName(""); // NOI18N
 
-        jButton4.setText("GENERAR REPORTE");
-        jButton4.setName("btn_generar_report"); // NOI18N
+        btn_generar_report.setText("GENERAR REPORTE");
+        btn_generar_report.setName(""); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -52,23 +52,23 @@ public class menuAdministracion extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(btn_generar_report)
+                    .addComponent(btn_ges_ingres_egresos)
+                    .addComponent(btn_ges_trabajadores)
+                    .addComponent(btn_gest_pedidos))
                 .addContainerGap(183, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addComponent(jButton1)
+                .addComponent(btn_gest_pedidos)
                 .addGap(48, 48, 48)
-                .addComponent(jButton2)
+                .addComponent(btn_ges_trabajadores)
                 .addGap(44, 44, 44)
-                .addComponent(jButton3)
+                .addComponent(btn_ges_ingres_egresos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addComponent(btn_generar_report)
                 .addGap(39, 39, 39))
         );
 
@@ -111,9 +111,9 @@ public class menuAdministracion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    public javax.swing.JButton btn_generar_report;
+    public javax.swing.JButton btn_ges_ingres_egresos;
+    public javax.swing.JButton btn_ges_trabajadores;
+    public javax.swing.JButton btn_gest_pedidos;
     // End of variables declaration//GEN-END:variables
 }
