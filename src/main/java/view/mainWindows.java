@@ -4,6 +4,8 @@
  */
 package view;
 
+import controller.LoadImage;
+
 /**
  *
  * @author DELL
@@ -15,6 +17,8 @@ public class mainWindows extends javax.swing.JFrame {
      */
     public mainWindows() {
         initComponents();
+        LoadImage Fondo=new LoadImage ("/img/Fondo.jpg",lbl_fondo.getHeight(),lbl_fondo.getWidth());
+        lbl_fondo.setIcon(Fondo.getImg());
     }
 
     /**
@@ -26,202 +30,144 @@ public class mainWindows extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         btn_pro1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         btn_pro2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        lbl_nombre1 = new javax.swing.JLabel();
         btn_iniciar_sesion = new javax.swing.JButton();
         btn_pro4 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        lbl_nombre2 = new javax.swing.JLabel();
         btn_pro5 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lbl_nombre3 = new javax.swing.JLabel();
+        lbl_nombre4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        txt_detalle1 = new javax.swing.JTextPane();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
-        jLabel14 = new javax.swing.JLabel();
+        txt_detalle3 = new javax.swing.JTextPane();
+        lbl_precio1 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jTextPane6 = new javax.swing.JTextPane();
+        txt_detalle4 = new javax.swing.JTextPane();
+        lbl_precio2 = new javax.swing.JLabel();
+        lbl_precio3 = new javax.swing.JLabel();
+        lbl_precio4 = new javax.swing.JLabel();
+        txt_detalle2 = new javax.swing.JScrollPane();
+        txt_datalle2 = new javax.swing.JTextPane();
         btn_anterior = new javax.swing.JButton();
         btn_siguiente = new javax.swing.JButton();
+        lbl_img1 = new javax.swing.JLabel();
+        lbl_img3 = new javax.swing.JLabel();
+        lbl_img2 = new javax.swing.JLabel();
+        lbl_img4 = new javax.swing.JLabel();
+        lbl_fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         btn_pro1.setText("AÑADIR AL CARRITO");
         btn_pro1.setName(""); // NOI18N
+        jPanel1.add(btn_pro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Showcard Gothic", 3, 36)); // NOI18N
         jLabel1.setText("CATALOGO");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 230, -1));
 
         btn_pro2.setText("AÑADIR AL CARRITO");
         btn_pro2.setName(""); // NOI18N
+        jPanel1.add(btn_pro2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
 
-        jLabel2.setText("Fresh ME 20 Lt");
+        lbl_nombre1.setText("Fresh ME 20 Lt");
+        jPanel1.add(lbl_nombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         btn_iniciar_sesion.setText("INICIAR SESION");
+        jPanel1.add(btn_iniciar_sesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 30, -1, -1));
 
         btn_pro4.setText("AÑADIR AL CARRITO");
         btn_pro4.setName(""); // NOI18N
+        jPanel1.add(btn_pro4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, -1, -1));
 
-        jLabel3.setText("Fresh ME Limon 1.5 Lt");
+        lbl_nombre2.setText("Fresh ME Limon 1.5 Lt");
+        jPanel1.add(lbl_nombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
         btn_pro5.setText("AÑADIR AL CARRITO");
         btn_pro5.setName(""); // NOI18N
+        jPanel1.add(btn_pro5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, -1, -1));
 
-        jLabel5.setText("Fresh ME 7 Lt");
+        lbl_nombre3.setText("Fresh ME 7 Lt");
+        jPanel1.add(lbl_nombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, -1, -1));
 
-        jLabel6.setText("Fresh ME 3 Lt");
+        lbl_nombre4.setText("Fresh ME 3 Lt");
+        jPanel1.add(lbl_nombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, -1, -1));
 
         jLabel8.setText("PRECIO");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, -1, -1));
 
         jLabel9.setText("PRECIO");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 60, 30));
 
-        jTextPane2.setText("Agua Mineral refrescante 20 Litros");
-        jScrollPane2.setViewportView(jTextPane2);
+        txt_detalle1.setText("Agua Mineral refrescante 20 Litros");
+        jScrollPane2.setViewportView(txt_detalle1);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 90, 60));
 
         jLabel11.setText("PRECIO");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, -1, -1));
 
         jLabel12.setText("PRECIO");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 220, -1, -1));
 
-        jTextPane3.setText("Agua Mineral refrescante 7 Litros");
-        jScrollPane3.setViewportView(jTextPane3);
+        txt_detalle3.setText("Agua Mineral refrescante 7 Litros");
+        jScrollPane3.setViewportView(txt_detalle3);
 
-        jLabel14.setText("70 BS");
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, 110, 60));
 
-        jTextPane4.setText("Agua Mineral refrescante 3 Litros");
-        jScrollPane4.setViewportView(jTextPane4);
+        lbl_precio1.setText("70 BS");
+        jPanel1.add(lbl_precio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
 
-        jLabel15.setText("15 BS");
+        txt_detalle4.setText("Agua Mineral refrescante 3 Litros");
+        jScrollPane4.setViewportView(txt_detalle4);
 
-        jLabel17.setText("30 BS");
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 110, 60));
 
-        jLabel18.setText("20 BS");
+        lbl_precio2.setText("15 BS");
+        jPanel1.add(lbl_precio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
 
-        jTextPane6.setText("Bedida Refrescante base de agua y zumo sensacion limon 1.5 Litros");
-        jScrollPane6.setViewportView(jTextPane6);
+        lbl_precio3.setText("30 BS");
+        jPanel1.add(lbl_precio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, -1, -1));
+
+        lbl_precio4.setText("20 BS");
+        jPanel1.add(lbl_precio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, -1, -1));
+
+        txt_datalle2.setText("Bedida Refrescante base de agua y zumo sensacion limon 1.5 Litros");
+        txt_detalle2.setViewportView(txt_datalle2);
+
+        jPanel1.add(txt_detalle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 120, 70));
 
         btn_anterior.setText("<");
+        jPanel1.add(btn_anterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, -1, -1));
 
         btn_siguiente.setText(">");
+        jPanel1.add(btn_siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 340, -1, -1));
+        jPanel1.add(lbl_img1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 100, 90));
+        jPanel1.add(lbl_img3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 100, 90));
+        jPanel1.add(lbl_img2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 100, 90));
+        jPanel1.add(lbl_img4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 100, 90));
+        jPanel1.add(lbl_fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 380));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(296, 296, 296)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
-                .addComponent(btn_iniciar_sesion)
-                .addGap(56, 56, 56))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel15)
-                    .addComponent(btn_pro2)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel14)
-                    .addComponent(btn_pro1))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(122, 122, 122)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btn_anterior)
-                        .addGap(38, 38, 38)
-                        .addComponent(btn_siguiente))
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel17)
-                    .addComponent(btn_pro4)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel18)
-                    .addComponent(btn_pro5))
-                .addGap(20, 20, 20))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(btn_iniciar_sesion))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14)
-                        .addGap(12, 12, 12)
-                        .addComponent(btn_pro1)
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel15)
-                        .addGap(5, 5, 5)
-                        .addComponent(btn_pro2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_pro4)
-                                .addGap(42, 42, 42))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(39, 39, 39)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_pro5)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_anterior)
-                    .addComponent(btn_siguiente))
-                .addContainerGap(18, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -273,23 +219,29 @@ public class mainWindows extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane6;
+    private javax.swing.JLabel lbl_fondo;
+    public javax.swing.JLabel lbl_img1;
+    public javax.swing.JLabel lbl_img2;
+    public javax.swing.JLabel lbl_img3;
+    public javax.swing.JLabel lbl_img4;
+    public javax.swing.JLabel lbl_nombre1;
+    public javax.swing.JLabel lbl_nombre2;
+    public javax.swing.JLabel lbl_nombre3;
+    public javax.swing.JLabel lbl_nombre4;
+    public javax.swing.JLabel lbl_precio1;
+    public javax.swing.JLabel lbl_precio2;
+    public javax.swing.JLabel lbl_precio3;
+    public javax.swing.JLabel lbl_precio4;
+    public javax.swing.JTextPane txt_datalle2;
+    public javax.swing.JTextPane txt_detalle1;
+    private javax.swing.JScrollPane txt_detalle2;
+    public javax.swing.JTextPane txt_detalle3;
+    public javax.swing.JTextPane txt_detalle4;
     // End of variables declaration//GEN-END:variables
 }
