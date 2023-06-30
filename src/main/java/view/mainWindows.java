@@ -74,7 +74,7 @@ public class mainWindows extends javax.swing.JFrame {
         jPanel1.add(btn_pro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Showcard Gothic", 3, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 153, 153));
         jLabel1.setText("CATALOGO");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 300, -1));
 
