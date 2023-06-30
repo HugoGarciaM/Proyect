@@ -107,16 +107,22 @@ public class windowMain extends javax.swing.JFrame {
         jLabel19.setText("15 BS");
 
         jButton1.setText("AÑADIR AL CARRITO");
+        jButton1.setName("btn_pro1"); // NOI18N
 
         jButton2.setText("AÑADIR AL CARRITO");
+        jButton2.setName("btn_pro2"); // NOI18N
 
         jButton3.setText("AÑADIR AL CARRITO");
+        jButton3.setName("btn_pro4"); // NOI18N
 
         jButton4.setText("AÑADIR AL CARRITO");
+        jButton4.setName("btn_pro3"); // NOI18N
 
         jButton5.setText("AÑADIR AL CARRITO");
+        jButton5.setName("btn_pro5"); // NOI18N
 
         jButton6.setText("AÑADIR AL CARRITO");
+        jButton6.setName("btn_pro6"); // NOI18N
 
         jTextPane2.setText("Agua Mineral refrescante 20 Litros");
         jScrollPane2.setViewportView(jTextPane2);
@@ -191,7 +197,7 @@ public class windowMain extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
             .addGroup(layout.createSequentialGroup()
                 .addGap(296, 296, 296)
-                .addComponent(jLabel1)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
