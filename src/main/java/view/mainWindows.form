@@ -56,13 +56,16 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="36" style="3"/>
+              <Font name="Showcard Gothic" size="48" style="3"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CATALOGO"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="250" y="30" width="230" height="-1"/>
+              <AbsoluteConstraints x="250" y="30" width="300" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -82,6 +85,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombre1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fresh ME 20 Lt"/>
           </Properties>
           <AuxValues>
@@ -122,6 +131,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombre2">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fresh ME Limon 1.5 Lt"/>
           </Properties>
           <AuxValues>
@@ -149,6 +164,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombre3">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fresh ME 7 Lt"/>
           </Properties>
           <AuxValues>
@@ -156,12 +177,18 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="410" y="110" width="-1" height="-1"/>
+              <AbsoluteConstraints x="410" y="110" width="120" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombre4">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fresh ME 3 Lt"/>
           </Properties>
           <AuxValues>
@@ -169,12 +196,15 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="430" y="260" width="-1" height="-1"/>
+              <AbsoluteConstraints x="420" y="230" width="120" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="PRECIO"/>
           </Properties>
           <Constraints>
@@ -185,11 +215,14 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="PRECIO"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="230" y="100" width="60" height="30"/>
+              <AbsoluteConstraints x="230" y="100" width="70" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -199,7 +232,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="140" width="90" height="60"/>
+              <AbsoluteConstraints x="10" y="140" width="110" height="60"/>
             </Constraint>
           </Constraints>
 
@@ -217,6 +250,9 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="PRECIO"/>
           </Properties>
           <Constraints>
@@ -227,6 +263,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Serif" size="18" style="2"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="PRECIO"/>
           </Properties>
           <Constraints>
@@ -241,7 +280,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="410" y="140" width="110" height="60"/>
+              <AbsoluteConstraints x="410" y="140" width="120" height="60"/>
             </Constraint>
           </Constraints>
 
@@ -276,7 +315,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="420" y="290" width="110" height="60"/>
+              <AbsoluteConstraints x="420" y="290" width="120" height="60"/>
             </Constraint>
           </Constraints>
 

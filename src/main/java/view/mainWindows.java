@@ -73,14 +73,17 @@ public class mainWindows extends javax.swing.JFrame {
         btn_pro1.setName(""); // NOI18N
         jPanel1.add(btn_pro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Showcard Gothic", 3, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Showcard Gothic", 3, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 255, 255));
         jLabel1.setText("CATALOGO");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 230, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 300, -1));
 
         btn_pro2.setText("AÑADIR AL CARRITO");
         btn_pro2.setName(""); // NOI18N
         jPanel1.add(btn_pro2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
 
+        lbl_nombre1.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
+        lbl_nombre1.setForeground(new java.awt.Color(0, 0, 0));
         lbl_nombre1.setText("Fresh ME 20 Lt");
         jPanel1.add(lbl_nombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
@@ -91,6 +94,8 @@ public class mainWindows extends javax.swing.JFrame {
         btn_pro4.setName(""); // NOI18N
         jPanel1.add(btn_pro4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, -1, -1));
 
+        lbl_nombre2.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
+        lbl_nombre2.setForeground(new java.awt.Color(0, 0, 0));
         lbl_nombre2.setText("Fresh ME Limon 1.5 Lt");
         jPanel1.add(lbl_nombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
@@ -98,33 +103,41 @@ public class mainWindows extends javax.swing.JFrame {
         btn_pro5.setName(""); // NOI18N
         jPanel1.add(btn_pro5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, -1, -1));
 
+        lbl_nombre3.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
+        lbl_nombre3.setForeground(new java.awt.Color(0, 0, 0));
         lbl_nombre3.setText("Fresh ME 7 Lt");
-        jPanel1.add(lbl_nombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, -1, -1));
+        jPanel1.add(lbl_nombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 120, -1));
 
+        lbl_nombre4.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
+        lbl_nombre4.setForeground(new java.awt.Color(0, 0, 0));
         lbl_nombre4.setText("Fresh ME 3 Lt");
-        jPanel1.add(lbl_nombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, -1, -1));
+        jPanel1.add(lbl_nombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, 120, -1));
 
+        jLabel8.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
         jLabel8.setText("PRECIO");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
         jLabel9.setText("PRECIO");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 60, 30));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 70, 30));
 
         txt_detalle1.setText("Agua Mineral refrescante 20 Litros");
         jScrollPane2.setViewportView(txt_detalle1);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 90, 60));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 110, 60));
 
+        jLabel11.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
         jLabel11.setText("PRECIO");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, -1, -1));
 
+        jLabel12.setFont(new java.awt.Font("Serif", 2, 18)); // NOI18N
         jLabel12.setText("PRECIO");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 220, -1, -1));
 
         txt_detalle3.setText("Agua Mineral refrescante 7 Litros");
         jScrollPane3.setViewportView(txt_detalle3);
 
-        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, 110, 60));
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, 120, 60));
 
         lbl_precio1.setText("70 BS");
         jPanel1.add(lbl_precio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
@@ -132,7 +145,7 @@ public class mainWindows extends javax.swing.JFrame {
         txt_detalle4.setText("Agua Mineral refrescante 3 Litros");
         jScrollPane4.setViewportView(txt_detalle4);
 
-        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 110, 60));
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 120, 60));
 
         lbl_precio2.setText("15 BS");
         jPanel1.add(lbl_precio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
