@@ -71,26 +71,42 @@ public class GestionarPedidos extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cbtnProducto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(cbtnProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, -1, -1));
+        jPanel1.add(cbtnProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
         jLabel5.setText("CÓDIGO:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 70, 20));
 
+        label2.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        label2.setForeground(new java.awt.Color(255, 0, 0));
         label2.setText("Precio total:");
-        jPanel1.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, -1, -1));
+        jPanel1.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 110, -1));
 
+        jLabel1.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
         jLabel1.setText("FECHA:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 58, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 80, 20));
 
+        jLabel6.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 0, 0));
         jLabel6.setText("Dirección:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 90, -1));
 
-        jLabel7.setText("Cliente");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        jLabel7.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel7.setText("Cliente:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 70, -1));
         jPanel1.add(txtCodigoBus, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 71, -1));
 
+        jLabel11.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 0, 0));
         jLabel11.setText("Precio:");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 43, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 80, -1));
+
+        txtProductoBus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtProductoBusActionPerformed(evt);
+            }
+        });
         jPanel1.add(txtProductoBus, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 71, -1));
 
         txtCodigo.addActionListener(new java.awt.event.ActionListener() {
@@ -98,25 +114,26 @@ public class GestionarPedidos extends javax.swing.JFrame {
                 txtCodigoActionPerformed(evt);
             }
         });
-        jPanel1.add(txtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 71, -1));
-        jPanel1.add(txtPrecioTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, 71, -1));
+        jPanel1.add(txtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 71, -1));
+        jPanel1.add(txtPrecioTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(141, 410, 60, 20));
 
         txtTelefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtTelefonoActionPerformed(evt);
             }
         });
-        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 71, -1));
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 71, -1));
 
         txtCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtClienteActionPerformed(evt);
             }
         });
-        jPanel1.add(txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 71, -1));
+        jPanel1.add(txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 71, -1));
 
+        jLabel4.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
         jLabel4.setText("Datos");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 45, 37, 30));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 70, 30));
 
         ftxtFechaBus.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("d/MM/yyyy"))));
         ftxtFechaBus.addActionListener(new java.awt.event.ActionListener() {
@@ -125,10 +142,12 @@ public class GestionarPedidos extends javax.swing.JFrame {
             }
         });
         jPanel1.add(ftxtFechaBus, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 126, -1));
-        jPanel1.add(txtNPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 71, -1));
+        jPanel1.add(txtNPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 71, -1));
 
+        jLabel12.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 0, 0));
         jLabel12.setText("Cantidad:");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 90, -1));
 
         tGestionarPedidos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -150,23 +169,30 @@ public class GestionarPedidos extends javax.swing.JFrame {
                 txtDireccionActionPerformed(evt);
             }
         });
-        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 71, -1));
+        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 71, -1));
 
+        jLabel10.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 0, 0));
         jLabel10.setText("Producto:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 110, -1));
 
         btnCancelar.setText("Cancelar");
         jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
         jLabel3.setText("PRODUCTO:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 70, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 80, 20));
 
+        jLabel8.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 0, 0));
         jLabel8.setText("Teléfono:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 60, 27));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 90, 27));
 
+        jLabel2.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
         jLabel2.setText("Código:");
         jLabel2.setToolTipText("");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 70, 20));
 
         btnModificar.setText("Modificar");
         jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 360, -1, -1));
@@ -174,17 +200,21 @@ public class GestionarPedidos extends javax.swing.JFrame {
         btnBuscar.setText("BUSCAR");
         jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 0, 0));
         jLabel9.setText("Numero Pedido:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 150, -1));
 
         txtPrecio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPrecioActionPerformed(evt);
             }
         });
-        jPanel1.add(txtPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 71, -1));
-        jPanel1.add(sbtnCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, -1, -1));
-        jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 400));
+        jPanel1.add(txtPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 71, -1));
+        jPanel1.add(sbtnCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, -1, -1));
+
+        lblFondo.setForeground(new java.awt.Color(255, 0, 0));
+        jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 450));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -223,6 +253,10 @@ public class GestionarPedidos extends javax.swing.JFrame {
     private void txtClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtClienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtClienteActionPerformed
+
+    private void txtProductoBusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProductoBusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtProductoBusActionPerformed
 
     /**
      * @param args the command line arguments
