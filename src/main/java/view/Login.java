@@ -16,8 +16,9 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        //LoadImage logo=new LoadImage ("/img/LOGO.jpg",jLabel4.getHeight(),jLabel4.getWidth());
-        //jLabel4.setIcon(logo.getImg());
+        LoadImage logo=new LoadImage ("/img/LOGO.jpg",jLabel4.getHeight(),jLabel4.getWidth());
+        jLabel4.setIcon(logo.getImg());
+        
     }
 
     /**
@@ -71,12 +72,9 @@ public class Login extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnIngresar)
-                        .addGap(89, 89, 89))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lblBienvenido)
-                        .addGap(217, 217, 217))))
+                    .addComponent(btnIngresar)
+                    .addComponent(lblBienvenido))
+                .addGap(212, 212, 212))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,9 +94,9 @@ public class Login extends javax.swing.JFrame {
                         .addComponent(lblBienvenido)
                         .addGap(68, 68, 68)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(65, 65, 65)
+                .addGap(56, 56, 56)
                 .addComponent(btnIngresar)
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         pack();
